@@ -3,6 +3,8 @@ use once_cell::sync::Lazy;
 use wasm_bindgen::prelude::wasm_bindgen;
 
 pub mod app;
+pub mod matrix;
+
 pub use app::*;
 
 uniffi::include_scaffolding!("shared");

@@ -10,6 +10,7 @@ keywords.workspace = true
 [dependencies]
 
 [build-dependencies]
-anyhow.workspace = true
 crux_core = { workspace = true, features = ["typegen"] }
+
+anyhow.workspace = true
 shared = { path = "../shared", features = ["typegen"] }

@@ -4,15 +4,20 @@ version = "0.1.0"
 edition = "2021"
 
 [features]
-typegen = ["crux_core/typegen"]
+typegen = ["crux_core/typegen", "crux_http/typegen", "crux_kv/typegen"]
 
 [dependencies]
 crux_core.workspace = true
+crux_http.workspace = true
+crux_kv.workspace = true
+
 serde = { workspace = true, features = ["derive"] }
 once_cell = "1"
 uniffi.workspace = true
 wasm-bindgen = "0.2"
-matrix-sdk = "0.7"
+matrix-sdk-base = { version = "0.7", features = ["e2e-encryption"] }
+
+log.workspace = true
 
 [build-dependencies]
 uniffi = { workspace = true, features = ["build"] }
