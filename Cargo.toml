@@ -1,0 +1,16 @@
+[workspace]
+members = ["shared", "shared_types"]
+resolver = "2"
+
+[workspace.package]
+authors = ["m00n"]
+edition = "2021"
+repository = "https://github.com/m00nwtchr/cruxim/"
+license = "MPL-2.0"
+keywords = ["crux", "cross-platform-ui", "ffi", "wasm"]
+
+[workspace.dependencies]
+anyhow = "1"
+crux_core = "0.8"
+serde = "1"
+
