@@ -3,4 +3,3 @@ namespace shared {
 	bytes handle_response(u32 id, [ByRef] bytes res);
 	bytes view();
 };
-

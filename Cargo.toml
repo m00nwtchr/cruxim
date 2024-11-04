@@ -1,5 +1,5 @@
 [workspace]
-members = ["shared", "shared_types"]
+members = ["shared", "shared_types", "uniffi-bindgen"]
 resolver = "2"
 
 [workspace.package]
@@ -14,3 +14,4 @@ anyhow = "1"
 crux_core = "0.8"
 serde = "1"
 
+uniffi = "0.28"

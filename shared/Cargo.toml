@@ -10,12 +10,9 @@ typegen = ["crux_core/typegen"]
 crux_core.workspace = true
 serde = { workspace = true, features = ["derive"] }
 once_cell = "1"
-uniffi = "0.28"
+uniffi.workspace = true
 wasm-bindgen = "0.2"
 matrix-sdk = "0.7"
 
-[target.uniffi-bindgen.dependencies]
-uniffi = { version = "0.28", features = ["cli"] }
-
 [build-dependencies]
-uniffi = { version = "0.28", features = ["build"] }
+uniffi = { workspace = true, features = ["build"] }
