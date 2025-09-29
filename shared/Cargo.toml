@@ -18,6 +18,16 @@ wasm-bindgen = "0.2"
 matrix-sdk-base = { version = "0.7", features = ["e2e-encryption"] }
 
 log.workspace = true
+ruma = { version = "0.11.1", features = ["client-api-c", "unstable-msc3575"] }
+http = "1.1"
+crossbeam-channel = "0.5.13"
+
+[dev-dependencies]
+env_logger = "0.11"
+reqwest = "0.12"
+#anyhow = "1"
+crossbeam-channel = "0.5"
+tokio = { version = "1", default-features = false, features = ["rt-multi-thread", "macros"] }
 
 [build-dependencies]
 uniffi = { workspace = true, features = ["build"] }

@@ -14,7 +14,7 @@ anyhow = "1"
 serde = "1"
 log = "0.4"
 
-crux_core = "0.10"
-crux_http = "0.10"
-crux_kv = "0.5"
+crux_core = { path = "../crux/crux_core" }
+crux_http = { path = "../crux/crux_http", features = ["http-compat"] }
+crux_kv = { path = "../crux/crux_kv" }
 uniffi = "0.28"
